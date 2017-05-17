@@ -40,7 +40,7 @@ class HangmanGenerator:
         self.death_in -= 1
         return False
 
-    def won(self):
+    def win(self):
         curr_word = reduce((lambda x, y: x + y), [self._word[num] if l in self.letters_tried else "_" for num, l in enumerate(self._word)])
 
         try:

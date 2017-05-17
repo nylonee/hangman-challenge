@@ -14,5 +14,8 @@ def main():
     # returns true if game over and you were hung
     hangman.death()
 
+    # returns true if game has been won
+    hangman.win()
+
 if __name__ == "__main__":
 	main()
